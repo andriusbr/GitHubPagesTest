@@ -27,7 +27,15 @@
           eventLabel: 'TestLabel'
         }); */
         ga('send', 'event', 'Video', 'play', 'cats.mp4');
-        console.log('2');
+        
+        if ("ga" in window) {
+           console.log('2');
+            tracker = ga.getAll()[0];
+            if (tracker)
+                tracker.send("event", "Test", "Test GA");
+        }
+        
+        
       }
     </script>
   </body>
