@@ -19,12 +19,14 @@
     
     <script>
       function submitEvent(){
+        console.log('1');
         ga('send', {
           hitType: 'event',
           eventCategory: 'TestCategory',
           eventAction: 'TestAction',
           eventLabel: 'TestLabel'
         }); 
+        console.log('2');
       }
     </script>
   </body>
