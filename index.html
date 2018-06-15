@@ -20,12 +20,13 @@
     <script>
       function submitEvent(){
         console.log('1');
-        ga('send', {
+        /*ga('send', {
           hitType: 'event',
           eventCategory: 'TestCategory',
           eventAction: 'TestAction',
           eventLabel: 'TestLabel'
-        }); 
+        }); */
+        ga('send', 'event', 'Video', 'play', 'cats.mp4');
         console.log('2');
       }
     </script>
